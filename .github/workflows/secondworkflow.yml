@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    name: git clone
+    runs-on: ubuntu-latest
+    steps:
+      - name: git clone
+        run: echo "Clonning Git Repository"
+
+      - name: build
+        run: echo" building source code"
+
